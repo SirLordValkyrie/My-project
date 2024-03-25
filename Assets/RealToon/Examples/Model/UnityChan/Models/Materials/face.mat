@@ -2,20 +2,30 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: face
-  m_Shader: {fileID: 4800000, guid: d12428961551799408aa97256fd770c3, type: 3}
-  m_ShaderKeywords: N_F_O_ON N_F_RELGI_ON N_F_SCT_ON N_F_SON_ON N_F_SS_ON
-  m_LightmapFlags: 5
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _EMISSION
+  m_InvalidKeywords:
+  - N_F_O_ON
+  - N_F_RELGI_ON
+  - N_F_SCT_ON
+  - N_F_SON_ON
+  - N_F_SS_ON
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -24,6 +34,22 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -75,7 +101,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -88,6 +122,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -127,6 +165,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AOIntensity: 0
     - _AdjustLightDirectionalLight: 1.15
@@ -135,6 +174,7 @@ Material:
     - _AffectlightDirectionalLightOnly: 1
     - _AlphaBaseCutout: 1
     - _Brightness: 0
+    - _BumpScale: 1
     - _ColorContrast: 0
     - _Compa: 8
     - _CustomLightDirectionFollowObjectRotation: 1
@@ -143,10 +183,12 @@ Material:
     - _Cutout: 0
     - _DefaultReflectionRoughtness: 0
     - _DepthBias: 0.00012
+    - _DetailNormalMapScale: 1
     - _DirectionalLightAffectShadow: 0
     - _DirectionalLightIntensity: 0
     - _DoubleSided: 2
     - _DoubleSidedOutline: 1
+    - _DstBlend: 0
     - _DynamicNoiseOutline: 0
     - _DynamicNoisyOutline: 0
     - _EOPO: 0
@@ -171,6 +213,7 @@ Material:
     - _GIShadeThreshold: 1
     - _GlossColorPower: 10
     - _GlossIntensity: 0
+    - _GlossMapScale: 1
     - _GlossSoftness: 0
     - _GlossTextureFollowLight: 0
     - _GlossTextureFollowObjectRotation: 0
@@ -178,6 +221,7 @@ Material:
     - _GlossTextureRotate: 0
     - _GlossTextureSoftness: 0
     - _Glossiness: 0.5
+    - _GlossyReflections: 1
     - _HardEdgeFresnel: 1
     - _HighlightColorPower: 1
     - _LightAffectOutlineColor: 0
@@ -200,9 +244,11 @@ Material:
     - _MainTextureColorSelfShadow: 1
     - _MainTextureColorShadow: 1
     - _MainTextureColorShadowT: 0
+    - _Metallic: 0
     - _MixMainTexToOutline: 0
     - _Mix_BaseTexture: 0.4803289
     - _Mix_KageTexture: 0.5096624
+    - _Mode: 0
     - _N_F_CA: 0
     - _N_F_CLD: 0
     - _N_F_CO: 0
@@ -228,6 +274,7 @@ Material:
     - _NoisyOutlineIntensity: 0
     - _NormalIntensity: 1
     - _NormalMapIntensity: 0
+    - _OcclusionStrength: 1
     - _Oper: 8
     - _OutlineExtrudeMethod: 0
     - _OutlineMode: 0
@@ -239,6 +286,7 @@ Material:
     - _OverallShadowColorPower: 1.17
     - _PSGLOTEX: 0
     - _PTexturePower: 0
+    - _Parallax: 0.02
     - _PointLightSVD: 0
     - _PointSpotlightIntensity: 0.3
     - _RELG: 1
@@ -310,11 +358,15 @@ Material:
     - _ShowShadowTonSelfShadow: 1
     - _ShowShadowTonShadow: 1
     - _SmoothObjectNormal: 1
+    - _SmoothnessTextureChannel: 0
     - _SoftGloss: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
     - _TEXMCOLINT: 1
     - _TexturePatternStyle: 0
     - _TextureWashout: 0
     - _Transparent: 0
+    - _UVSec: 0
     - _UseFReflection: 0
     - _UseGILighting: 1
     - _UseSecondaryCutout: 0
@@ -324,10 +376,12 @@ Material:
     - _VertexColorsIntensity: 0
     - _Washout: 0
     - _XYZHardness: 14
+    - _ZWrite: 1
     - _isKage_Normal: 0
     m_Colors:
     - _Color: {r: 0.74509805, g: 0.74509805, b: 0.74509805, a: 1}
     - _CustomLightDirection: {r: 0, g: 0, b: 10, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlossColor: {r: 1, g: 1, b: 1, a: 1}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
@@ -344,3 +398,4 @@ Material:
     - _ShadowOverrideColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowTColor: {r: 0, g: 0, b: 0, a: 1}
     - _XYZPosition: {r: 0.01, g: -18.63, b: 0, a: 0}
+  m_BuildTextureStacks: []

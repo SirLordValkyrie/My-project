@@ -2,21 +2,31 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Robo_Color_RealToon
-  m_Shader: {fileID: 4800000, guid: 10a560dd9adca524db99cbf26d7f34a5, type: 3}
-  m_ShaderKeywords: _ENABLELIGHTFALLOFF_ON _FRESNELONLIGHT_ON _HARDEDGEFRESNEL_ON
-    _MAINTEXTURECOLORSELFSHADOW_ON _SHOWAOONAMBIENTLIGHT_ON _SHOWSHADOWTONLIGHT_ON
-  m_LightmapFlags: 5
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _EMISSION
+  m_InvalidKeywords:
+  - _ENABLELIGHTFALLOFF_ON
+  - _FRESNELONLIGHT_ON
+  - _HARDEDGEFRESNEL_ON
+  - _MAINTEXTURECOLORSELFSHADOW_ON
+  - _SHOWAOONAMBIENTLIGHT_ON
+  - _SHOWSHADOWTONLIGHT_ON
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -100,6 +110,7 @@ Material:
         m_Texture: {fileID: 2800000, guid: 3e0ae4892d7915d4ebe7fa7a80bbe669, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AOIntensity: 0
     - _BumpScale: 1
@@ -117,8 +128,10 @@ Material:
     - _FresnelOnShadow: 0
     - _FresnelVisibleOnDarkAmbientLight: 0
     - _GlossIntensity: 1.05
+    - _GlossMapScale: 1
     - _GlossTextureIntensity: 0
     - _Glossiness: 0.516
+    - _GlossyReflections: 1
     - _HardEdgeFresnel: 1
     - _MainTextureColorAO: 0
     - _MainTextureColorGloss: 0
@@ -160,7 +173,9 @@ Material:
     - _ShowShadowTOnAmbientLight: 0
     - _ShowShadowTOnLight: 1
     - _ShowShadowTOnShadow: 0
+    - _SmoothnessTextureChannel: 0
     - _SoftGloss: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _TexturePatternStyle: 0
     - _TextureWashout: 0
@@ -176,3 +191,4 @@ Material:
     - _SelfLitColor: {r: 1, g: 1, b: 1, a: 1}
     - _SelfShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
